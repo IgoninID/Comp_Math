@@ -7,17 +7,17 @@ using namespace std;
 
 double f(double x)
 {
-	return 9 * x + pow(2, x) - 9;
+	return -4 * pow(x, 3) + 3 * pow(x, 2) - 5 * x + 4;
 }
 
 double df(double x)
 {
-	return 9 + log(2) * pow(2, x);
+	return -12 * pow(x, 2) + 6 * x - 5;
 }
 
 double ddf(double x)
 {
-	return pow(2, x) * pow(log(2), 2);
+	return -24 * x + 6;
 }
 
 double halfy(double a, double b, double e, int &iter)
